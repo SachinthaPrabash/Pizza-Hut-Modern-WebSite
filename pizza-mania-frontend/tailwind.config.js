@@ -1,10 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/App.js"
+    "./src/components/Header.js",
+    "./src/components/Footer.js",
+    "./src/App.js",
+    "./src/screen/HomeScreen.js",
+
   ],
   theme: {
-    extend: {},
+    extend: {
+      rotate: {
+        '20': '20deg',
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/line-clamp'),
+  ],
 }

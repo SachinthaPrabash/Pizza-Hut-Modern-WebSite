@@ -1,11 +1,14 @@
-
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import HomeScreen from "./screen/HomeScreen";
 
 function App() {
   return (
-    <div className='flex items-center justify-center'>
-      <h1 className='text-xl text-red-400 text-left '>
-        hello world
-      </h1>
+    <div className="">
+      <Header />
+      <HomeScreen />
+
+      <Footer />
     </div>
   );
 }
